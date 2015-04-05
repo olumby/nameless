@@ -1018,6 +1018,17 @@ form {
   margin-left: auto;
   margin-right: auto;
 }
+.p0 {
+  padding: 0;
+}
+.py0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.px0 {
+  padding-left: 0;
+  padding-right: 0;
+}
 .p1 {
   padding: 0.3125rem;
 }
