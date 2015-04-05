@@ -1,0 +1,171 @@
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input,
+select,
+textarea,
+.block {
+    .cr(line-height, 22px);
+    .crxy(padding, 12px, 15px);
+    .cr(margin-bottom, 5px);
+    margin-top: 0;
+    font-size: inherit;
+    font-weight: 300;
+    background: #fff;
+    border: none;
+    display: inline-block;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    &:focus {
+        outline: none;
+        background: #FDFDFD;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    color: #A9A9A9;
+    font-weight: 300;
+}
+
+.checkbox, .radio {
+    .cr(margin-top, 5px);
+    .cr(line-height, 22px);
+    input {
+        .cr(font-size, 15px);
+        box-shadow: none; 
+    }
+    input[type=checkbox] {
+        .crtrbl(margin, 8px, 10px, 0, 5px);
+    }
+    input[type=radio] {
+        .crtrbl(margin, 7px, 10px, 0, 5px);
+    }
+    label {
+        vertical-align: middle;
+        color: @default-text-color;
+    }
+    input:disabled + label {
+        color: fade(@default-text-color, 10%);
+    }
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+    legend {
+        .cr(margin-bottom, 5px);
+        font-weight: 400;
+    }
+}
+
+label {
+    .cr(margin-left, 1px);
+}
+
+form {
+    .crxy(margin, 30px, 0);
+}
+
+form.compact-form { 
+
+    button,
+    input,
+    select,
+    textarea,
+    fieldset,
+    .block {
+        float: left;
+    }
+    
+    input[type=text],
+    input[type=datetime],
+    input[type=datetime-local],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    input[type=submit],
+    button,
+    textarea,
+    .block {
+        box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset;
+
+        &.half-width {
+            &.left-side {
+                box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+            }
+        }
+
+        &:nth-child(1) {
+            &.half-width {
+                border-radius: 4px 0 0 0;
+            }
+            &.full-width {
+                border-radius: 4px 4px 0 0;
+            }
+        }
+        &:nth-child(2) {
+            &.half-width {
+                border-radius: 0 4px 0 0;
+            }
+        }
+
+        &:nth-last-child(1) {
+            &.half-width {
+                border-radius: 0 0 4px 0;
+            }
+            &.full-width {
+                border-radius: 0 0 4px 4px;
+            }
+        }
+        &:nth-last-child(2) {
+            &.half-width {
+                border-radius: 0 0 0 4px;
+            }
+        }
+    }
+
+    button,
+    .button {
+        border-color: rgba(0, 0, 0, 0.1);
+        box-shadow: none;
+    }
+    
+}
+
+/* Placeholders
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+::-webkit-input-placeholder {
+    transition: opacity 0.5s;
+}
+
+::-moz-placeholder {
+    transition: opacity 0.5s;
+}
+
+:-ms-input-placeholder {
+    transition: opacity 0.5s;
+}
+
+.fade-placeholder::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.fade-placeholder::-moz-placeholder {
+    opacity: 0;
+}
+
+.fade-placeholder:-ms-input-placeholder {
+    opacity: 0;
+}

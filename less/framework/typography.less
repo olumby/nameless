@@ -1,0 +1,51 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    .cr(margin-bottom, 10px);
+    font-weight: 300;
+}
+h1, .h1 {
+    .cr(font-size, 50px);
+    .cr(line-height, 60px);
+    .cr(letter-spacing, -0.5px);
+}
+h2, .h2 {
+    .cr(font-size, 42px);
+    .cr(line-height, 52px);
+    .cr(letter-spacing, -0.5px);
+}
+h3, .h3 {
+    .cr(font-size, 36px);
+    .cr(line-height, 46px);
+    .cr(letter-spacing, -0.5px);
+}
+h4, .h4 {
+    .cr(font-size, 30px);
+    .cr(line-height, 40px);
+}
+h5, .h5 {
+    .cr(font-size, 24px);
+    .cr(line-height, 34px);
+}
+h6, .h6 {
+    .cr(font-size, 15px);
+    .cr(line-height, 25px);
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: @default-link-active-color;
+    
+    &.muted {
+        color: @default-link-muted-color;
+    }
+
+    &:hover {
+        color: @default-link-hover-color;
+    }
+}

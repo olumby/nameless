@@ -1,0 +1,44 @@
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+    list-style: disc inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    .crtrbl(margin, 10px, 0, 10px, 20px);
+}
+
+li {
+    .cr(margin-bottom, 5px);
+}
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+    .cr(padding, 3px);
+    .crxy(margin, 0, 2px);
+    .cr(font-size, 13px);
+    white-space: nowrap;
+    background: @default-block-background-color;
+    border: 1px solid @default-border-color;
+    border-radius: @default-border-radius;
+}
+
+pre > code {
+    .crxy(padding, 10px, 15px);
+    display: block;
+    white-space: pre;
+    overflow: scroll;
+}

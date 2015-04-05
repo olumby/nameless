@@ -1,0 +1,82 @@
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button,
+.button {
+    .cr(font-size, 15px);
+    .cr(line-height, 15px);
+    .crxy(padding, 12px, 15px);
+    color: @default-link-active-color;
+    font-weight: @default-control-font-weight;
+    background-color: @default-background-color;
+    border: 1px solid @default-border-color;
+    border-radius: @default-border-radius;
+
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    height: auto;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    transition-duration: .05s;
+    transition-timing-function: ease-out;
+    transition-property: box-shadow, background-color;
+
+    &:hover {
+        color: @default-link-hover-color;
+        text-decoration: none;
+        box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, .04);
+    }
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:disabled,
+.button.button-disabled {
+    opacity: .5;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.button-primary {
+    color: @default-light-text-color;
+    border-color: @default-light-text-color;
+    background: @default-link-active-color;
+
+    &:hover {
+        color: @default-light-text-color;
+    }
+}
+
+.button-negative {
+    color: @default-light-text-color;
+    border-color: @default-light-text-color;
+    background: @default-link-muted-color;
+
+    &:hover {
+        color: @default-light-text-color;
+    }
+}
+
+.button-borderless {
+    border-width: 0;
+}
+
+.button-squared {
+    border-radius: 0;
+}
+
+.button-transparent {
+    border-width: 0;
+    background: rgba(0, 0, 0, 0);
+}
