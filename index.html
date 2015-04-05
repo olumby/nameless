@@ -204,72 +204,78 @@
     <div class="container">
         <div class="six columns">
             <form class="clearfix compact-form">
-                <input type="text" placeholder="Shelter name" class="full-width m0">
-                <input type="text" placeholder="Tax identification number" class="full-width m0">
-                <input type="email" placeholder="Contact email address" class="full-width m0">
-                <input type="tel" placeholder="Contact phone number" class="full-width m0">
-                <input disabled="" type="text" placeholder="Contact person (disabled)" class="full-width m0">
-                <textarea  placeholder="Postal address" class="full-width m0"></textarea>
-                <input type="number" placeholder="Number of animals" class="half-width left-side m0">
-                <input disabled="" type="number" placeholder="Animal capacity (disabled)" class="half-width m0">
+                <fieldset>
+                    <legend>Long Compact Form</legend>
+                    <input type="text" placeholder="Shelter name" class="full-width m0">
+                    <input type="text" placeholder="Tax identification number" class="full-width m0">
+                    <input type="email" placeholder="Contact email address" class="full-width m0">
+                    <input type="tel" placeholder="Contact phone number" class="full-width m0">
+                    <input disabled="" type="text" placeholder="Contact person (disabled)" class="full-width m0">
+                    <textarea  placeholder="Postal address" class="full-width m0"></textarea>
+                    <input type="number" placeholder="Number of animals" class="half-width left-side m0">
+                    <input disabled="" type="number" placeholder="Animal capacity (disabled)" class="half-width m0">
 
-                <div class="block half-width left-side m0">
-                    <label>Facility Type</label>
+                    <div class="block half-width left-side m0">
+                        <label>Facility Type</label>
 
-                    <div class="radio full-width">
-                        <input type="radio" value="state" name="facility_type">
-                        <label>Municipal/State</label>
+                        <div class="radio full-width">
+                            <input type="radio" value="state" name="facility_type">
+                            <label>Municipal/State</label>
+                        </div>
+                        <div class="radio full-width">
+                            <input type="radio" value="rnonprofit" name="facility_type">
+                            <label>Registered Non Profit</label>
+                        </div>
+                        <div class="radio full-width">
+                            <input type="radio" value="urnonprofit" name="facility_type">
+                            <label>Unregistered Non Profit</label>
+                        </div>
                     </div>
-                    <div class="radio full-width">
-                        <input type="radio" value="rnonprofit" name="facility_type">
-                        <label>Registered Non Profit</label>
-                    </div>
-                    <div class="radio full-width">
-                        <input type="radio" value="urnonprofit" name="facility_type">
-                        <label>Unregistered Non Profit</label>
-                    </div>
-                </div>
-                <div class="block half-width m0">
-                    <label>Supported animals</label>
+                    <div class="block half-width m0">
+                        <label>Supported animals</label>
 
-                    <div class="checkbox full-width">
-                        <input type="hidden" name="accept_cats" value="0">
-                        <input type="checkbox" value="1" name="accept_cats">
-                        <label>Cats</label>
+                        <div class="checkbox full-width">
+                            <input type="hidden" name="accept_cats" value="0">
+                            <input type="checkbox" value="1" name="accept_cats">
+                            <label>Cats</label>
+                        </div>
+                        <div class="checkbox full-width">
+                            <input type="hidden" name="accept_dogs" value="0">
+                            <input type="checkbox" value="1" name="accept_dogs">
+                            <label>Dogs</label>
+                        </div>
+                        <div class="checkbox full-width">
+                            <input type="hidden" name="accept_other" value="0">
+                            <input type="checkbox" value="1" name="accept_other">
+                            <label>Other</label>
+                        </div>
                     </div>
-                    <div class="checkbox full-width">
-                        <input type="hidden" name="accept_dogs" value="0">
-                        <input type="checkbox" value="1" name="accept_dogs">
-                        <label>Dogs</label>
+                    <div class="block full-width m0">
+                        <div class="text-left alert full-width alert-information">
+                            <p class="m0">Please note: All applications are processed and set up by hand, please allow up to two weeks before contacting us.</p>
+                        </div>
                     </div>
-                    <div class="checkbox full-width">
-                        <input type="hidden" name="accept_other" value="0">
-                        <input type="checkbox" value="1" name="accept_other">
-                        <label>Other</label>
-                    </div>
-                </div>
-                <div class="block full-width m0">
-                    <div class="text-left alert full-width alert-information">
-                        <p class="m0">Please note: All applications are processed and set up by hand, please allow up to two weeks before contacting us.</p>
-                    </div>
-                </div>
-                <button type="submit" class="button button-primary full-width">Send Application</button>
+                    <button type="submit" class="button button-primary full-width">Send Application</button>
+                </fieldset>
             </form>
         </div>
         <div class="six columns">
             <div class="compact">
                 <form class="clearfix compact-form">
-                    <input type="text" placeholder="First Name" class="half-width left-side m0" value="John">
-                    <input type="text" placeholder="Last Name" class="half-width m0" value="Doe">
-                    <input type="email" placeholder="Email" class="full-width m0">
-                    <button type="submit" class="button button-primary half-width left-side">Left Button</button>
-                    <button type="submit" class="button button-negative half-width">Right Button</button>
+                    <fieldset>
+                        <legend>Small Compact Form</legend>
+                        <input type="text" placeholder="First Name" class="half-width left-side m0" value="John">
+                        <input type="text" placeholder="Last Name" class="half-width m0" value="Doe">
+                        <input type="email" placeholder="Email" class="full-width m0">
+                        <button type="submit" class="button button-primary half-width left-side">Left Button</button>
+                        <button type="submit" class="button button-negative half-width">Right Button</button>
+                    </fieldset>
                 </form>
             </div>
             <div class="seperated">
                 <form class="clearfix">
                     <fieldset>
-                        <legend>Registration Form Title</legend>
+                        <legend>Small Normal Form</legend>
                         <label for="first_name">First Name</label>
                         <input id="first_name" type="text" placeholder="First Name" class="full-width">
                         <label for="last_name">Last Name</label>
