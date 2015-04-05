@@ -1196,6 +1196,18 @@ nav.navigation .button#name {
 .container-fluid.grid .column:nth-child(2) {
   background: #2c3e50;
 }
+.container-fluid.grid .columns:nth-child(3),
+.container-fluid.grid .column:nth-child(3) {
+  background: #34495e;
+}
+.container-fluid.grid .columns:nth-child(4),
+.container-fluid.grid .column:nth-child(4) {
+  background: #2c3e50;
+}
+.container-fluid.grid .columns:nth-child(5),
+.container-fluid.grid .column:nth-child(5) {
+  background: #34495e;
+}
 .container-fluid.buttons {
   padding: 40px;
   text-align: center;
