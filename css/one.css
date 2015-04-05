@@ -1153,8 +1153,7 @@ code {
   margin: 0rem 0.125rem;
   font-size: 0.8125rem;
   white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #ecf0f1;
+  background: #f7f7f7;
   border-radius: 4px;
 }
 pre > code {
