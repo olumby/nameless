@@ -900,6 +900,32 @@ th {
 tr:last-child td {
   border-bottom: none;
 }
+@media screen and (max-width: 600px) {
+  table.responsive {
+    padding: 0;
+  }
+  table.responsive thead {
+    display: none;
+  }
+  table.responsive tr {
+    margin: 0.625rem 0rem;
+    display: block;
+    border: 1px solid #ecf0f1;
+  }
+  table.responsive td {
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  table.responsive td:last-child {
+    border-bottom: none;
+  }
+  table.responsive td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
@@ -1187,26 +1213,11 @@ nav.navigation .button#name {
 .container-fluid.grid .columns,
 .container-fluid.grid .column {
   padding: 10px;
-}
-.container-fluid.grid .columns:nth-child(1),
-.container-fluid.grid .column:nth-child(1) {
   background: #34495e;
 }
-.container-fluid.grid .columns:nth-child(2),
-.container-fluid.grid .column:nth-child(2) {
+.container-fluid.grid .columns:nth-child(2n),
+.container-fluid.grid .column:nth-child(2n) {
   background: #2c3e50;
-}
-.container-fluid.grid .columns:nth-child(3),
-.container-fluid.grid .column:nth-child(3) {
-  background: #34495e;
-}
-.container-fluid.grid .columns:nth-child(4),
-.container-fluid.grid .column:nth-child(4) {
-  background: #2c3e50;
-}
-.container-fluid.grid .columns:nth-child(5),
-.container-fluid.grid .column:nth-child(5) {
-  background: #34495e;
 }
 .container-fluid.buttons {
   padding: 40px;
