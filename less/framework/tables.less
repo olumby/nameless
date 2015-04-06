@@ -15,3 +15,35 @@ tr:last-child {
         border-bottom: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    table.responsive {
+        padding: 0;
+
+        thead {
+            display: none;
+        }
+
+        tr {
+            .crxy(margin, 10px, 0);
+            display: block;
+            border: 1px solid @default-border-color;
+        }
+
+        td {
+            display: block;
+            text-align: right;
+            border-bottom: 1px solid @default-border-color;
+        }
+
+        td:last-child {
+            border-bottom: none;
+        }
+
+        td:before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+        }
+    }
+}

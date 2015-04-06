@@ -900,6 +900,32 @@ th {
 tr:last-child td {
   border-bottom: none;
 }
+@media screen and (max-width: 600px) {
+  table.responsive {
+    padding: 0;
+  }
+  table.responsive thead {
+    display: none;
+  }
+  table.responsive tr {
+    margin: 0.625rem 0rem;
+    display: block;
+    border: 1px solid #ecf0f1;
+  }
+  table.responsive td {
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  table.responsive td:last-child {
+    border-bottom: none;
+  }
+  table.responsive td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
