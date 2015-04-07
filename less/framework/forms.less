@@ -11,9 +11,12 @@ textarea,
     font-size: inherit;
     font-weight: 300;
     background: #fff;
-    border: none;
+    border-color: @default-border-color;
+    border-radius: @default-border-radius;
+    border-style: solid;
+    border-width: 1px;
     display: inline-block;
-    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    
     &:focus {
         outline: none;
         background: #FDFDFD;
@@ -95,14 +98,13 @@ form.compact-form {
     button,
     textarea,
     .block {
-        box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset;
-
+        border-radius: 0;
+        border-width: 1px 1px 0 1px;
         &.half-width {
             &.left-side {
-                box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+                border-width: 1px 0 0 1px;
             }
         }
-
          
         &.half-width.top-left {
             border-radius: 4px 0 0 0;

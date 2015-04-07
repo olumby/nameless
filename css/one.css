@@ -652,9 +652,11 @@ textarea,
   font-size: inherit;
   font-weight: 300;
   background: #fff;
-  border: none;
+  border-color: #ecf0f1;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
   display: inline-block;
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
 input:focus,
 select:focus,
@@ -735,7 +737,8 @@ form.compact-form input[type=submit],
 form.compact-form button,
 form.compact-form textarea,
 form.compact-form .block {
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 0;
+  border-width: 1px 1px 0 1px;
 }
 form.compact-form input[type=text].half-width.left-side,
 form.compact-form input[type=datetime].half-width.left-side,
@@ -753,7 +756,7 @@ form.compact-form input[type=submit].half-width.left-side,
 form.compact-form button.half-width.left-side,
 form.compact-form textarea.half-width.left-side,
 form.compact-form .block.half-width.left-side {
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+  border-width: 1px 0 0 1px;
 }
 form.compact-form input[type=text].half-width.top-left,
 form.compact-form input[type=datetime].half-width.top-left,
