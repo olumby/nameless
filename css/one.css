@@ -563,6 +563,11 @@ a.muted {
 a:hover {
   color: #3498db;
 }
+ul li,
+ol li {
+  margin-left: 1.5625rem;
+  list-style-position: outside;
+}
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ::-moz-focus-inner {
