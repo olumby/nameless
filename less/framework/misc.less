@@ -41,3 +41,17 @@ pre > code {
     white-space: pre;
     overflow: scroll;
 }
+
+/* Selective Display
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (min-width: @bp-small) {
+    .small-only {
+        display: none;
+    }
+}
+@media screen and (max-width: @bp-small) {
+    .not-small {
+        display: none;
+    }
+}

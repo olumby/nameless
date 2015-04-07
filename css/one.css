@@ -900,27 +900,27 @@ th {
 tr:last-child td {
   border-bottom: none;
 }
-@media screen and (max-width: 600px) {
-  table.responsive {
+@media screen and (max-width: 450px) {
+  table.responsive-card {
     padding: 0;
   }
-  table.responsive thead {
+  table.responsive-card thead {
     display: none;
   }
-  table.responsive tr {
+  table.responsive-card tr {
     margin: 0.625rem 0rem;
     display: block;
     border: 1px solid #ecf0f1;
   }
-  table.responsive td {
+  table.responsive-card td {
     display: block;
     text-align: right;
     border-bottom: 1px solid #ecf0f1;
   }
-  table.responsive td:last-child {
+  table.responsive-card td:last-child {
     border-bottom: none;
   }
-  table.responsive td:before {
+  table.responsive-card td:before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
@@ -1187,6 +1187,18 @@ pre > code {
   display: block;
   white-space: pre;
   overflow: scroll;
+}
+/* Selective Display
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 450px) {
+  .small-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .not-small {
+    display: none;
+  }
 }
 nav.navigation {
   background: #fafafa;
