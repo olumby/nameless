@@ -9,16 +9,16 @@ nav.navigation {
     }
 }
 
-.container.typography, .container-fluid.grid {
+.container.typography, .container-fluid.grid, .container-fluid.buttons, .container-fluid.forms {
     background: @md-grey-50;
-    margin-bottom: 40px;
+}
+.container-fluid.typography, .container-fluid.grid, .container-fluid.buttons, .container-fluid.tables, .container-fluid.forms {
     padding:30px 0;
 }
 
 .container-fluid.grid {
-    color: #ecf0f1;
     .row {
-        
+        color: #ecf0f1;    
         margin-bottom: 2px;
         &:last-child {
             margin: 0;
@@ -34,13 +34,12 @@ nav.navigation {
 }
 
 .container-fluid.buttons {
-    padding: 40px;
-    text-align: center;
+    .row {
+       text-align: center;
+    }
 }
 
 .container-fluid.tables {
-    background: @md-grey-50;
-
     .columns:nth-child(2) {
         color: #fff;
         background: @md-grey-900;

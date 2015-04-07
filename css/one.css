@@ -706,9 +706,6 @@ fieldset legend {
 label {
   margin-left: 0.0625rem;
 }
-form {
-  margin: 1.875rem 0rem;
-}
 form.compact-form button,
 form.compact-form input,
 form.compact-form select,
@@ -1208,15 +1205,20 @@ nav.navigation .button#name {
   opacity: 1;
 }
 .container.typography,
-.container-fluid.grid {
+.container-fluid.grid,
+.container-fluid.buttons,
+.container-fluid.forms {
   background: #fafafa;
-  margin-bottom: 40px;
+}
+.container-fluid.typography,
+.container-fluid.grid,
+.container-fluid.buttons,
+.container-fluid.tables,
+.container-fluid.forms {
   padding: 30px 0;
 }
-.container-fluid.grid {
-  color: #ecf0f1;
-}
 .container-fluid.grid .row {
+  color: #ecf0f1;
   margin-bottom: 2px;
 }
 .container-fluid.grid .row:last-child {
@@ -1231,12 +1233,8 @@ nav.navigation .button#name {
 .container-fluid.grid .column:nth-child(2n) {
   background: #2c3e50;
 }
-.container-fluid.buttons {
-  padding: 40px;
+.container-fluid.buttons .row {
   text-align: center;
-}
-.container-fluid.tables {
-  background: #fafafa;
 }
 .container-fluid.tables .columns:nth-child(2) {
   color: #fff;
