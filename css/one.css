@@ -1143,6 +1143,12 @@ form {
 .display-none {
   display: none !important;
 }
+.rounded {
+  border-radius: 4px;
+}
+.squared {
+  border-radius: 0;
+}
 .hide {
   position: absolute !important;
   height: 1px;
@@ -1206,6 +1212,10 @@ pre > code {
     display: none;
   }
 }
+/* Basic Configuration
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Advanced Configuration
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav.navigation {
   background: #fafafa;
 }

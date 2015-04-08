@@ -12,14 +12,16 @@
 @import "framework/util";
 @import "framework/misc";
 
+/* Basic Configuration
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+// Grid Sizes
 @bp-small: 450px; // 600
 @bp-medium: 780px; // 780
 @bp-large: 960px; // 960
 @bp-huge: 1200px; // 1200
 
-// Colors
-
+// Default Colors
 @default-text-color: #2c3e50;
 @default-light-text-color: #ecf0f1;
 @default-link-muted-color: #22313F;
@@ -29,10 +31,26 @@
 @default-background-color: #FFFFFF;
 @default-block-background-color: #F7F7F7;
 
-
-
 // Sizes
-
 @default-border-radius: 4px;
 @default-font-weight: 400;
 @default-control-font-weight: 200;
+
+/* Advanced Configuration
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Buttons Colors
+@button-active-color: @default-link-active-color;
+@button-background-color: @default-background-color;
+@button-border-color: @default-border-color;
+@button-hover-color: @default-link-hover-color;
+
+@button-primary-active-color: @default-light-text-color;
+@button-primary-border-color: @default-light-text-color;
+@button-primary-background-color: @default-link-active-color;
+@button-primary-hover-color: @default-light-text-color;
+
+@button-negative-active-color: @default-light-text-color;
+@button-negative-border-color: @default-light-text-color;
+@button-negative-background-color: @default-link-muted-color;
+@button-negative-hover-color: @default-light-text-color;
