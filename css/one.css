@@ -563,6 +563,11 @@ a.muted {
 a:hover {
   color: #3498db;
 }
+ul li,
+ol li {
+  margin-left: 1.5625rem;
+  list-style-position: outside;
+}
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ::-moz-focus-inner {
@@ -647,9 +652,11 @@ textarea,
   font-size: inherit;
   font-weight: 300;
   background: #fff;
-  border: none;
+  border-color: #ecf0f1;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
   display: inline-block;
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
 input:focus,
 select:focus,
@@ -730,7 +737,8 @@ form.compact-form input[type=submit],
 form.compact-form button,
 form.compact-form textarea,
 form.compact-form .block {
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset, -1px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 0;
+  border-width: 1px 1px 0 1px;
 }
 form.compact-form input[type=text].half-width.left-side,
 form.compact-form input[type=datetime].half-width.left-side,
@@ -748,115 +756,115 @@ form.compact-form input[type=submit].half-width.left-side,
 form.compact-form button.half-width.left-side,
 form.compact-form textarea.half-width.left-side,
 form.compact-form .block.half-width.left-side {
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+  border-width: 1px 0 0 1px;
 }
-form.compact-form input[type=text]:nth-child(1).half-width,
-form.compact-form input[type=datetime]:nth-child(1).half-width,
-form.compact-form input[type=datetime-local]:nth-child(1).half-width,
-form.compact-form input[type=email]:nth-child(1).half-width,
-form.compact-form input[type=month]:nth-child(1).half-width,
-form.compact-form input[type=number]:nth-child(1).half-width,
-form.compact-form input[type=password]:nth-child(1).half-width,
-form.compact-form input[type=search]:nth-child(1).half-width,
-form.compact-form input[type=tel]:nth-child(1).half-width,
-form.compact-form input[type=time]:nth-child(1).half-width,
-form.compact-form input[type=url]:nth-child(1).half-width,
-form.compact-form input[type=week]:nth-child(1).half-width,
-form.compact-form input[type=submit]:nth-child(1).half-width,
-form.compact-form button:nth-child(1).half-width,
-form.compact-form textarea:nth-child(1).half-width,
-form.compact-form .block:nth-child(1).half-width {
+form.compact-form input[type=text].half-width.top-left,
+form.compact-form input[type=datetime].half-width.top-left,
+form.compact-form input[type=datetime-local].half-width.top-left,
+form.compact-form input[type=email].half-width.top-left,
+form.compact-form input[type=month].half-width.top-left,
+form.compact-form input[type=number].half-width.top-left,
+form.compact-form input[type=password].half-width.top-left,
+form.compact-form input[type=search].half-width.top-left,
+form.compact-form input[type=tel].half-width.top-left,
+form.compact-form input[type=time].half-width.top-left,
+form.compact-form input[type=url].half-width.top-left,
+form.compact-form input[type=week].half-width.top-left,
+form.compact-form input[type=submit].half-width.top-left,
+form.compact-form button.half-width.top-left,
+form.compact-form textarea.half-width.top-left,
+form.compact-form .block.half-width.top-left {
   border-radius: 4px 0 0 0;
 }
-form.compact-form input[type=text]:nth-child(1).full-width,
-form.compact-form input[type=datetime]:nth-child(1).full-width,
-form.compact-form input[type=datetime-local]:nth-child(1).full-width,
-form.compact-form input[type=email]:nth-child(1).full-width,
-form.compact-form input[type=month]:nth-child(1).full-width,
-form.compact-form input[type=number]:nth-child(1).full-width,
-form.compact-form input[type=password]:nth-child(1).full-width,
-form.compact-form input[type=search]:nth-child(1).full-width,
-form.compact-form input[type=tel]:nth-child(1).full-width,
-form.compact-form input[type=time]:nth-child(1).full-width,
-form.compact-form input[type=url]:nth-child(1).full-width,
-form.compact-form input[type=week]:nth-child(1).full-width,
-form.compact-form input[type=submit]:nth-child(1).full-width,
-form.compact-form button:nth-child(1).full-width,
-form.compact-form textarea:nth-child(1).full-width,
-form.compact-form .block:nth-child(1).full-width {
-  border-radius: 4px 4px 0 0;
-}
-form.compact-form input[type=text]:nth-child(2).half-width,
-form.compact-form input[type=datetime]:nth-child(2).half-width,
-form.compact-form input[type=datetime-local]:nth-child(2).half-width,
-form.compact-form input[type=email]:nth-child(2).half-width,
-form.compact-form input[type=month]:nth-child(2).half-width,
-form.compact-form input[type=number]:nth-child(2).half-width,
-form.compact-form input[type=password]:nth-child(2).half-width,
-form.compact-form input[type=search]:nth-child(2).half-width,
-form.compact-form input[type=tel]:nth-child(2).half-width,
-form.compact-form input[type=time]:nth-child(2).half-width,
-form.compact-form input[type=url]:nth-child(2).half-width,
-form.compact-form input[type=week]:nth-child(2).half-width,
-form.compact-form input[type=submit]:nth-child(2).half-width,
-form.compact-form button:nth-child(2).half-width,
-form.compact-form textarea:nth-child(2).half-width,
-form.compact-form .block:nth-child(2).half-width {
+form.compact-form input[type=text].half-width.top-right,
+form.compact-form input[type=datetime].half-width.top-right,
+form.compact-form input[type=datetime-local].half-width.top-right,
+form.compact-form input[type=email].half-width.top-right,
+form.compact-form input[type=month].half-width.top-right,
+form.compact-form input[type=number].half-width.top-right,
+form.compact-form input[type=password].half-width.top-right,
+form.compact-form input[type=search].half-width.top-right,
+form.compact-form input[type=tel].half-width.top-right,
+form.compact-form input[type=time].half-width.top-right,
+form.compact-form input[type=url].half-width.top-right,
+form.compact-form input[type=week].half-width.top-right,
+form.compact-form input[type=submit].half-width.top-right,
+form.compact-form button.half-width.top-right,
+form.compact-form textarea.half-width.top-right,
+form.compact-form .block.half-width.top-right {
   border-radius: 0 4px 0 0;
 }
-form.compact-form input[type=text]:nth-last-child(1).half-width,
-form.compact-form input[type=datetime]:nth-last-child(1).half-width,
-form.compact-form input[type=datetime-local]:nth-last-child(1).half-width,
-form.compact-form input[type=email]:nth-last-child(1).half-width,
-form.compact-form input[type=month]:nth-last-child(1).half-width,
-form.compact-form input[type=number]:nth-last-child(1).half-width,
-form.compact-form input[type=password]:nth-last-child(1).half-width,
-form.compact-form input[type=search]:nth-last-child(1).half-width,
-form.compact-form input[type=tel]:nth-last-child(1).half-width,
-form.compact-form input[type=time]:nth-last-child(1).half-width,
-form.compact-form input[type=url]:nth-last-child(1).half-width,
-form.compact-form input[type=week]:nth-last-child(1).half-width,
-form.compact-form input[type=submit]:nth-last-child(1).half-width,
-form.compact-form button:nth-last-child(1).half-width,
-form.compact-form textarea:nth-last-child(1).half-width,
-form.compact-form .block:nth-last-child(1).half-width {
+form.compact-form input[type=text].half-width.bottom-right,
+form.compact-form input[type=datetime].half-width.bottom-right,
+form.compact-form input[type=datetime-local].half-width.bottom-right,
+form.compact-form input[type=email].half-width.bottom-right,
+form.compact-form input[type=month].half-width.bottom-right,
+form.compact-form input[type=number].half-width.bottom-right,
+form.compact-form input[type=password].half-width.bottom-right,
+form.compact-form input[type=search].half-width.bottom-right,
+form.compact-form input[type=tel].half-width.bottom-right,
+form.compact-form input[type=time].half-width.bottom-right,
+form.compact-form input[type=url].half-width.bottom-right,
+form.compact-form input[type=week].half-width.bottom-right,
+form.compact-form input[type=submit].half-width.bottom-right,
+form.compact-form button.half-width.bottom-right,
+form.compact-form textarea.half-width.bottom-right,
+form.compact-form .block.half-width.bottom-right {
   border-radius: 0 0 4px 0;
 }
-form.compact-form input[type=text]:nth-last-child(1).full-width,
-form.compact-form input[type=datetime]:nth-last-child(1).full-width,
-form.compact-form input[type=datetime-local]:nth-last-child(1).full-width,
-form.compact-form input[type=email]:nth-last-child(1).full-width,
-form.compact-form input[type=month]:nth-last-child(1).full-width,
-form.compact-form input[type=number]:nth-last-child(1).full-width,
-form.compact-form input[type=password]:nth-last-child(1).full-width,
-form.compact-form input[type=search]:nth-last-child(1).full-width,
-form.compact-form input[type=tel]:nth-last-child(1).full-width,
-form.compact-form input[type=time]:nth-last-child(1).full-width,
-form.compact-form input[type=url]:nth-last-child(1).full-width,
-form.compact-form input[type=week]:nth-last-child(1).full-width,
-form.compact-form input[type=submit]:nth-last-child(1).full-width,
-form.compact-form button:nth-last-child(1).full-width,
-form.compact-form textarea:nth-last-child(1).full-width,
-form.compact-form .block:nth-last-child(1).full-width {
-  border-radius: 0 0 4px 4px;
-}
-form.compact-form input[type=text]:nth-last-child(2).half-width,
-form.compact-form input[type=datetime]:nth-last-child(2).half-width,
-form.compact-form input[type=datetime-local]:nth-last-child(2).half-width,
-form.compact-form input[type=email]:nth-last-child(2).half-width,
-form.compact-form input[type=month]:nth-last-child(2).half-width,
-form.compact-form input[type=number]:nth-last-child(2).half-width,
-form.compact-form input[type=password]:nth-last-child(2).half-width,
-form.compact-form input[type=search]:nth-last-child(2).half-width,
-form.compact-form input[type=tel]:nth-last-child(2).half-width,
-form.compact-form input[type=time]:nth-last-child(2).half-width,
-form.compact-form input[type=url]:nth-last-child(2).half-width,
-form.compact-form input[type=week]:nth-last-child(2).half-width,
-form.compact-form input[type=submit]:nth-last-child(2).half-width,
-form.compact-form button:nth-last-child(2).half-width,
-form.compact-form textarea:nth-last-child(2).half-width,
-form.compact-form .block:nth-last-child(2).half-width {
+form.compact-form input[type=text].half-width.bottom-left,
+form.compact-form input[type=datetime].half-width.bottom-left,
+form.compact-form input[type=datetime-local].half-width.bottom-left,
+form.compact-form input[type=email].half-width.bottom-left,
+form.compact-form input[type=month].half-width.bottom-left,
+form.compact-form input[type=number].half-width.bottom-left,
+form.compact-form input[type=password].half-width.bottom-left,
+form.compact-form input[type=search].half-width.bottom-left,
+form.compact-form input[type=tel].half-width.bottom-left,
+form.compact-form input[type=time].half-width.bottom-left,
+form.compact-form input[type=url].half-width.bottom-left,
+form.compact-form input[type=week].half-width.bottom-left,
+form.compact-form input[type=submit].half-width.bottom-left,
+form.compact-form button.half-width.bottom-left,
+form.compact-form textarea.half-width.bottom-left,
+form.compact-form .block.half-width.bottom-left {
   border-radius: 0 0 0 4px;
+}
+form.compact-form input[type=text].full-width.top,
+form.compact-form input[type=datetime].full-width.top,
+form.compact-form input[type=datetime-local].full-width.top,
+form.compact-form input[type=email].full-width.top,
+form.compact-form input[type=month].full-width.top,
+form.compact-form input[type=number].full-width.top,
+form.compact-form input[type=password].full-width.top,
+form.compact-form input[type=search].full-width.top,
+form.compact-form input[type=tel].full-width.top,
+form.compact-form input[type=time].full-width.top,
+form.compact-form input[type=url].full-width.top,
+form.compact-form input[type=week].full-width.top,
+form.compact-form input[type=submit].full-width.top,
+form.compact-form button.full-width.top,
+form.compact-form textarea.full-width.top,
+form.compact-form .block.full-width.top {
+  border-radius: 4px 4px 0 0;
+}
+form.compact-form input[type=text].full-width.bottom,
+form.compact-form input[type=datetime].full-width.bottom,
+form.compact-form input[type=datetime-local].full-width.bottom,
+form.compact-form input[type=email].full-width.bottom,
+form.compact-form input[type=month].full-width.bottom,
+form.compact-form input[type=number].full-width.bottom,
+form.compact-form input[type=password].full-width.bottom,
+form.compact-form input[type=search].full-width.bottom,
+form.compact-form input[type=tel].full-width.bottom,
+form.compact-form input[type=time].full-width.bottom,
+form.compact-form input[type=url].full-width.bottom,
+form.compact-form input[type=week].full-width.bottom,
+form.compact-form input[type=submit].full-width.bottom,
+form.compact-form button.full-width.bottom,
+form.compact-form textarea.full-width.bottom,
+form.compact-form .block.full-width.bottom {
+  border-radius: 0 0 4px 4px;
 }
 form.compact-form button,
 form.compact-form .button {
@@ -1177,6 +1185,7 @@ code {
   font-size: 0.8125rem;
   white-space: nowrap;
   background: #f7f7f7;
+  border: 1px solid #ecf0f1;
   border-radius: 4px;
 }
 pre > code {
